@@ -1,0 +1,102 @@
+@use '../themes/theme.scss';
+.header-toolbar {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 64px;
+
+  .icon-button {
+    color: var(--icon-color);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .avatar {
+    border-radius: 9999px;
+    border: 1px solid var(--avatar-border-color);
+  }
+
+  .notification-button {
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--notification-border-color);
+    border-radius: 50px;
+  }
+
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .shake-animation {
+    animation: shake 0.4s ease-in-out;
+  }
+}
+
+::ng-deep .mat-menu-panel {
+  border-radius: 0.75rem;
+  padding: 0.5rem 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  min-width: 180px;
+
+  .mat-menu-item {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.75rem 1.25rem;
+    color: #1f2937; // Gray-800
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 0.5rem;
+    transition: background 0.2s ease, transform 0.15s ease;
+
+    mat-icon {
+      color: #4b5563; // Gray-600
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: #f3f4f6; // Gray-100
+      transform: translateX(2px);
+    }
+  }
+}
+@keyframes bounceBadge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+::ng-deep .mat-badge-content {
+  animation: bounceBadge 1.2s infinite ease-in-out;
+}
+

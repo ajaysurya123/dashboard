@@ -1,0 +1,54 @@
+<div class="dashboard-container">
+  <div class="dashboard-grid">
+    <mat-card class="dashboard-card card-blue">
+      <div class="icon-container"><mat-icon>local_shipping</mat-icon></div>
+      <div class="card-text">
+        <p>Total Shipments</p>
+        <h3>{{ totalShipments }}</h3>
+      </div>
+      <div class="icon-container-ab"><mat-icon>local_shipping</mat-icon></div>
+    </mat-card>
+
+    <mat-card class="dashboard-card card-green">
+      <div class="icon-container"><mat-icon>check_circle</mat-icon></div>
+      <div class="card-text">
+        <p>Delivered</p>
+        <h3>{{ delivered }}</h3>
+      </div>
+      <div class="icon-container-ab"><mat-icon>check_circle</mat-icon></div>
+    </mat-card>
+
+    <mat-card class="dashboard-card card-yellow">
+      <div class="icon-container"><mat-icon>local_mall</mat-icon></div>
+      <div class="card-text">
+        <p>In Transit</p>
+        <h3>{{ inTransit }}</h3>
+      </div>
+      <div class="icon-container-ab"><mat-icon>local_mall</mat-icon></div>
+    </mat-card>
+
+    <mat-card class="dashboard-card card-red">
+      <div class="icon-container"><mat-icon>error</mat-icon></div>
+      <div class="card-text">
+        <p>Delayed</p>
+        <h3>{{ delayed }}</h3>
+      </div>
+      <div class="icon-container-ab"><mat-icon>error</mat-icon></div>
+    </mat-card>
+  </div>
+</div>
+<h2 class="dashboard-title">Shipment Overview</h2>
+<div class="dashboard-charts">
+    <mat-card class="pt-5 adjustWidth">
+        <app-dashboard-chart></app-dashboard-chart>
+    </mat-card>
+    <mat-card class="pt-5 adjustWidth">
+        <app-dashboard-chart-all></app-dashboard-chart-all>
+    </mat-card>
+</div>
+<h2 class="dashboard-title !mt-1 ">Delivery List</h2>
+<div class="pt-[2rem] pb-[2rem]">
+    <mat-card>
+        <app-dashboard-table></app-dashboard-table>
+    </mat-card>
+</div>

@@ -1,0 +1,25 @@
+// Basic styling for the app component
+.mat-sidenav-container {
+    height: 100vh; // Full viewport height
+    width: 100vw;  // Full viewport width
+  }
+  
+  .mat-sidenav {
+    width: 250px; // Fixed width for the sidebar
+    background-color: #202124; // Dark background for the sidebar (Google Dark Mode feel)
+    color: #e8eaed; // Light text color
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); // Subtle shadow
+    border-right: none; // Remove default border
+  }
+  
+  .mat-toolbar {
+    background-color: #4285F4; // Google Blue for toolbar
+    color: white;
+    height: 64px; // Standard toolbar height
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+  }
+  
+  main {
+    background-color: #f8f9fa; // Light background for main content
+    padding: 24px; // Padding around content
+  }

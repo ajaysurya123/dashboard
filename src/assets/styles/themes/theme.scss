@@ -1,0 +1,33 @@
+/* Light Theme */
+:root {
+  --sidebar-bg: #ffffff;
+  --header-bg: #ffffff;
+  --text-color: #1f2937;
+  --nav-text-color: #1f2937;
+  --label-color: #374151;
+  --icon-color: #374151;
+  --divider-color: rgba(0, 0, 0, 0.1);
+  --nav-hover-bg: rgba(0, 0, 0, 0.05);
+  --nav-active-bg: rgba(0, 0, 0, 0.07);
+  --nav-active-color: #111827;
+  --primary-color: #2563eb;
+  --avatar-border-color: #d1d5db;
+  --notification-border-color: #b4bcc7;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --sidebar-bg: #002244;
+  --header-bg: #002244;
+  --text-color: #f1f5f9;
+  --nav-text-color: rgba(255, 255, 255, 0.9);
+  --label-color: rgba(255, 255, 255, 0.8);
+  --icon-color: rgba(255, 255, 255, 0.8);
+  --divider-color: rgba(255, 255, 255, 0.1);
+  --nav-hover-bg: rgba(255, 255, 255, 0.1);
+  --nav-active-bg: rgba(255, 255, 255, 0.1);
+  --nav-active-color: white;
+  --primary-color: #3b82f6;
+  --avatar-border-color: #475569;
+  --notification-border-color: #ffffff;
+}

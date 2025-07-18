@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  background-color: #002244; // Deep navy
+  color: white;
+  height: 100%;
+  width: 16rem; 
+
+  .logo {
+    padding: 1.6rem 1em;
+    font-weight: normal;
+    font-size: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+  }
+
+  mat-nav-list {
+    margin-top: 1.5rem;
+
+    a[mat-list-item] {
+      color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      border-radius: 0.375rem;
+      transition: background 0.2s ease;
+
+      mat-icon {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 20px;
+      }
+
+      span {
+        margin-left: 1rem;
+        font-weight: 500;
+         color: rgba(255, 255, 255, 0.8);
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      &.router-link-active {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-weight: bold;
+
+        mat-icon,
+        span {
+          color: white;
+        }
+      }
+   
+    }
+  }
+}
+::ng-deep .mdc-list-item__primary-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem; // space between icon and text
+}

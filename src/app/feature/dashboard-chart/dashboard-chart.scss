@@ -1,0 +1,21 @@
+::ng-deep apx-chart {
+  width: 100% !important;
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display:inline-block;
+}
+.chart-wrapper {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+    }
+.chart-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  
+  apx-chart {
+    width: 100% !important;
+  }
+}
